@@ -1,0 +1,58 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 28rem;
+  padding-left: 1.75rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner__title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  width: 35rem;
+}
+
+.banner__buttons button {
+  cursor: pointer;
+  background-color: rgba(51, 51, 51, 0.5);
+  border-radius: 0.1rem;
+  color: white;
+  border-style: none;
+  padding: 0.5rem 2rem;
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+
+.banner__button button:hover {
+  background-color: #e6e6e6;
+  color: #111;
+  transition: all 0.3s;
+}
+
+.banner__description {
+  font-size: 0.85rem;
+  font-weight: 600;
+  width: 22rem;
+}
+
+@media (max-width: 720px) {
+  .banner__title {
+    width: 100%;
+  }
+  .banner__description {
+    width: 65%;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner__description {
+    width: 90%;
+  }
+}
+

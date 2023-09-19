@@ -1,0 +1,41 @@
+.row__title {
+  padding-left: 1.25rem;
+  color: white;
+}
+
+.row {
+  padding: 0.5rem 1.75rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.row::-webkit-scrollbar {
+  display: none;
+}
+
+.row__image {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 0.35rem;
+  height: clamp(40vh, 9rem, 9rem);
+  border-radius: 0.6rem;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  transition: transform 0.4s ease;
+  z-index: 2;
+}
+
+.row__image:hover {
+  transform: scale(1.05);
+}
+
+.row__message {
+  text-align: center;
+  background-color: rgba(51, 51, 51, 0.5);
+  border-radius: 0.25rem;
+  padding: 0.75rem 0;
+  margin: 0.5rem 1.25rem;
+  font-weight: 600;
+}
